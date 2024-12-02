@@ -1,0 +1,196 @@
+@font-face {
+    font-family: Aadil;
+    src: url(../Fonts/aadil-aadil/Aadil\ Aadil);
+}
+
+@font-face {
+    font-family: matter;
+    src: url(../Fonts/matter-font/Matter-Bold.ttf);
+}
+
+@font-face {
+    font-family: Macondo;
+    src: url(./Macondo_Swash_Caps/MacondoSwashCaps-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+
+}
+
+#main {
+    height: fit-content;
+    width: 100%;
+    padding: 2% 0;
+    background-color: #003567;
+}
+
+#main .kalima {
+    width: 12vw;
+    display: block;
+    margin: auto;
+    user-select: none;
+
+}
+
+a img {
+    position: fixed;
+    bottom: 3%;
+    left: 50%;
+    transform: translate(-50%, -3%);
+    width: 4vw;
+    background-color: black;
+    padding: 10px;
+    border-radius: 10px;
+    transition: all .2s ease-in-out;
+
+    &:hover {
+        transition: 0s;
+        background-color: rgb(125, 177, 255);
+        box-shadow: 0 0 10px rgb(125, 177, 255);
+    }
+}
+
+
+.bottom {
+    position: fixed;
+    width: 10vw;
+    bottom: .5%;
+    left: .5%;
+}
+
+.right {
+    position: fixed;
+    width: 10vw;
+    top: .5%;
+    right: .5%;
+}
+
+#main h2 {
+    box-shadow: 0 0 20px white;
+    border-radius: 10px;
+    padding: 10% 2%;
+    font-size: 3vw;
+    color: white;
+    width: 70%;
+    text-align: center;
+    margin: auto;
+    margin-top: 5%;
+    font-family: "matter";
+    line-height: 2;
+    user-select: none;
+    cursor: default;
+    transition: .5s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+button{
+    background-color: black;
+    color: white;
+    font-size: 2vw;
+    padding: 20px 50px;
+    border-radius: 5px;
+    border: none;
+    font-family: "matter";
+    transition: background .2s ease-in-out;
+    
+    &:hover{
+        box-shadow: 0 0 10px black;
+        background-color: transparent;
+        color: black;
+    }
+
+}
+
+.tarjuma{
+ display: none;
+ transition: all .5s ease-in-out;
+}
+.tarjuma h3{
+    font-size: 3vw;
+}
+
+#main h2:hover {
+    transition: 0s;
+    background-color: aliceblue;
+    box-shadow: 0 0 20px rgb(255, 255, 255);
+    color: black;
+
+}
+
+.kalimas img{
+    display: block;
+    margin: auto;
+    margin-top: 5%;
+    width: 200px;
+}
+
+
+@media (max-width:400px) {
+
+    #main{
+        padding-bottom: 5%;
+    }
+
+    #main h2 {
+        font-size: 6vw;
+        width: 85%;
+        box-shadow: 0 0 15px white;
+    }
+
+    #main .kalima {
+        width: 30vw;
+
+    }
+
+    a img {
+        position: fixed;
+        bottom: 3%;
+        left: 50%;
+        transform: translate(-50%, -3%);
+        height: 50px;
+        width: 50px;
+        background-color: rgb(255, 255, 255);
+        padding: 10px;
+        border-radius: 10px;
+        transition: all .2s ease-in-out;
+
+        &:hover {
+            transition: 0s;
+            background-color: rgb(125, 177, 255);
+            box-shadow: 0 0 10px rgb(125, 177, 255);
+        }
+    }
+
+    #main h2:hover {
+        transition: 0s;
+        background-color: aliceblue;
+        box-shadow: 0 0 20px rgb(255, 255, 255);
+        color: black;
+
+    }
+
+    .right {
+        width: 80px;
+    }
+
+    .bottom {
+        width: 80px;
+    }
+    .kalimas img{
+        width: 25vw;
+    }
+    .bt{
+        font-size: 4vw;
+    }
+}
